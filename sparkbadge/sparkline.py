@@ -10,6 +10,8 @@ WIDTH = 107
 X_OFFSET = 7
 Y_OFFSET = 1
 
+PATH_TO_EXAMPLES = '../examples'
+
 def normalize(arr: np.ndarray) -> np.ndarray:
     max_arr = np.max(arr)
     if max_arr != 0:
@@ -99,7 +101,7 @@ def stacked_bar(samples, labels):
         #canvas.append(draw.Rectangle(10*i, yy1, 10, yy2, fill='purple'))
     '''
 
-    canvas.save_svg('../examples')
+    canvas.save_svg(PATH_TO_EXAMPLES)
     #return canvas.asSvg()
 
 
